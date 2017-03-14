@@ -1,2 +1,32 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+
+
+
+
+<div class="main">
+      <div class="container">
+        <h1>BITLY</h1>
+        <p>Beautiful thing in life is short</p>
+        <!-- <a class="btn" href="#">Start Now</a> -->
+      </div>
+    <!-- </div> -->
+
+<div>
+<form action="/urls" method="post">
+   Enter URL:
+   <input type="text" name="long_url">
+   <input type="submit" value="Submit">
+</form>
+<p>Link: </p>
+<% if @list.nil? %>
+<p> This is your new link:
+  <a href = "/<%=@urls.short_url %>">localhost:9393/<%=@urls.short_url %>
+</p>
+<%else%>
+<% @list.each do |x| %>
+<p>
+   localhost:9393/<%= x.short_url %>
+ </p>
+<%end%>
+<%end%>
+</div>
+</div>

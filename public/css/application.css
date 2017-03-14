@@ -1,0 +1,39 @@
+/*body {
+    background-image: url("../img/image.jpg");
+}
+
+#headliner {
+  color: white;
+}*/
+.main {
+  text-align: center;
+  background: url("../img/image.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
+.main .container {
+  position: relative;
+  top: 100px;
+}
+
+ h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 150px;
+}
+
+.main p {
+  color: #fff;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+}
+
+.main .btn {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
